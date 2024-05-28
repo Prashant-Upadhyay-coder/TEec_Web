@@ -1,5 +1,4 @@
-import { Component, inject } from '@angular/core';
-import { ThemesService } from './Services/themes.service';
+import { Component, HostListener } from '@angular/core';
 import { RouterModule, RouterOutlet } from '@angular/router';
 
 @Component({
@@ -11,10 +10,29 @@ import { RouterModule, RouterOutlet } from '@angular/router';
 })
 export class NavbarComponent {
   logoImage="./assets/images/logo2.png"
-  email="Support@Tectonas.com"
-darkModeService:ThemesService = inject(ThemesService);
 
-togglerDarkMode(){
-this.darkModeService.updateDarkMode();
-}
+  header: HTMLElement | null = null;
+  sticky: number = 0;
+
+  ngOnInit(): void {
+    this.header = document.getElementById('myHeader');
+    if (this.header) {
+      this.sticky = this.header.offsetTop;
+    }
+  }
+
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    this.myFunction();
+  }
+
+  myFunction() {
+    if (this.header) {
+      if (window.pageYOffset > this.sticky) {
+        this.header.classList.add('sticky');
+      } else {
+        this.header.classList.remove('sticky');
+      }
+    }
+  }
 }

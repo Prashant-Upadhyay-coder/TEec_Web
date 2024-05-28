@@ -8,6 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
-  imageURL_content='/assets/images/At_the_office-amico.png'
-  imageURL_content_02='/assets/images/Data analysis-amico.png'
+  imageURL_content='/assets/images/Low code development-amico.png'
 }

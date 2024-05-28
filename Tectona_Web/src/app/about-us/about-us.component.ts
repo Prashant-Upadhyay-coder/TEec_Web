@@ -11,8 +11,8 @@ export class AboutUsComponent  implements  OnInit{
   ngOnInit(): void {
     console.log("about")
   }
-  imageURL_content='/assets/images/At_the_office-amico-min.png'
-  imageURL_content_02='/assets/images/Data analysis-amico.png'
+  imageURL_content='/assets/images/Company-amico.png'
+  imageURL_content_02='/assets/images/New employee-amico.png'
   img_icon='/assets/images/meeting-icon.png'
 
 

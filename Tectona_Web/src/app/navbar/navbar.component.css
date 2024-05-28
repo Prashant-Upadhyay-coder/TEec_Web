@@ -9,6 +9,7 @@ header {
     transition: all 0.5s ease 0s;
     position: relative;
     z-index: 99999;
+    border-bottom: 1px solid #d1d1d1;
 }
 .log_title {
     font-size: 28px;
@@ -69,4 +70,32 @@ header {
 }
 ul .nav-item{
     margin:0px  24px;
+    font-size: 16px;
+    font-weight: 600;
 }
+/* Custom styles for the dropdowns */
+.dropdown-menu {
+    display: none;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  .relative:hover .dropdown-menu {
+    display: block;
+  }
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+  }
+  
+  /* Ensure dropdowns display correctly on mobile */
+  @media (max-width: 768px) {
+    .dropdown-menu {
+      display: block !important;
+    }
+  }
+  

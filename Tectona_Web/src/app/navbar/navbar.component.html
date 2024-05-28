@@ -5,8 +5,8 @@
             <div class="col-md-9 height_top_bar">
                 <div class="top-bar-info">
                     <ul class="ps-0">
-                        <li><i class="bi bi-phone"></i>(+123) 456 7890</li>
-                        <li class="d-none d-sm-inline-block"><i class="bi bi-envelope-at"></i>{{email}}</li>
+                        <li><i class="bi bi-phone"></i>(+91) 9099983017</li>
+                        <li class="d-none d-sm-inline-block"><i class="bi bi-envelope-at"></i>contactus&#64;tectonas.com</li>
                     </ul>
                 </div>
             </div>
@@ -21,23 +21,63 @@
         </div>
     </div>
 </div>
-<header class="text-gray-600 body-font">
-  <div class="container mx-auto flex flex-wrap p-2 flex-col md:flex-row items-center">
+<header  id="myHeader"  class="text-gray-600 body-font">
+  <div class="container mx-auto flex flex-wrap p-3 flex-col md:flex-row items-center">
     <a class="flex title-font font-medium items-center text-gray-900 md:mb-0">
       <img [src]="logoImage" alt="logo" width="34" height="34" class="d-inline-block align-text-top">
       <span class="ml-3 text-xl">Tectonas</span>
     </a>
     <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-      <a class="mr-5 hover:text-gray-900" >First Link</a>
-      <a class="mr-5 hover:text-gray-900">Second Link</a>
-      <a class="mr-5 hover:text-gray-900">Third Link</a>
-      <a class="mr-5 hover:text-gray-900">Fourth Link</a>
+      <ul class=" d-flex">
+        <li class="nav-item">
+          <a class=" hover:text-gray-900"  routerLink="/home" routerLinkActive="active">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class=" hover:text-gray-900">CASSM</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle  hover:text-gray-900" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Tectonas
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" routerLink="/about" routerLinkActive="active"> Tectonas  CSAT Plus</a></li>
+            <li><a class="dropdown-item"  routerLink="/certificate" routerLinkActive="active">  Tectonas EPMs</a></li>
+            <li><a class="dropdown-item" href="#">Tectonas Nocdesk</a></li>
+            <li><a class="dropdown-item" href="#">Tectonas VAPT</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle  hover:text-gray-900" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          OwnYIT
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" routerLink="/about" routerLinkActive="active"> OwnYIT</a></li>
+            <li><a class="dropdown-item"  routerLink="/certificate" routerLinkActive="active">  OwnYIT CSAT Plus</a></li>
+            <li><a class="dropdown-item" href="#"> OwnYIT  VAPT</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle  hover:text-gray-900" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            About us
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" routerLink="/about" routerLinkActive="active">About us</a></li>
+            <li><a class="dropdown-item"  routerLink="/certificate" routerLinkActive="active">Certificate</a></li>
+            <li><a class="dropdown-item" href="#">Distribution</a></li>
+          </ul>
+        </li>
+       
+      </ul>
+   
+     
+   
+ 
     </nav>
-    <button class="inline-flex items-center border-0 py-1 px-3 focus:outline-none rounded   md:mt-0" style=" background-color: #102a83;color: white;">Contact us
+    <a class="inline-flex items-center border-0 py-1 px-3 focus:outline-none rounded   md:mt-0" style=" background-color: #6366f1;color: white;" routerLink="/Contact_us" >Contact us
       <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
         <path d="M5 12h14M12 5l7 7-7 7"></path>
       </svg>
-    </button>
+    </a>
   </div>
 </header>
 
