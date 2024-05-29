@@ -9,7 +9,7 @@ import { RouterModule, RouterOutlet } from '@angular/router';
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
-  logoImage="./assets/images/logo2.png"
+  logoImage="/assets/images/Tectonas_SS.png"
 
   header: HTMLElement | null = null;
   sticky: number = 0;
