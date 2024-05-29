@@ -120,18 +120,6 @@
 .hny-title{
     color: var(--orange);
 }
-.card{
-    font-weight: normal;
-    border-radius: 4px;
-    padding: 7px;
-    box-shadow: 0px 0px 4px 0px #d1d1d1;
-    border: none;
-    margin: 4px;
-}
-.card:hover{
-   border-right: 2px solid #102a83;
-}
-
 
 .section-heading5 {
     margin-bottom: 50px;

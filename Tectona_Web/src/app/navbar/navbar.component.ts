@@ -13,7 +13,7 @@ export class NavbarComponent {
 
   header: HTMLElement | null = null;
   sticky: number = 0;
-
+  scrollProgress: number = 0;
   ngOnInit(): void {
     this.header = document.getElementById('myHeader');
     if (this.header) {
@@ -24,6 +24,10 @@ export class NavbarComponent {
   @HostListener('window:scroll', [])
   onWindowScroll() {
     this.myFunction();
+    const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+    const scrollHeight = document.documentElement.scrollHeight || document.body.scrollHeight;
+    const clientHeight = document.documentElement.clientHeight || document.body.clientHeight;
+    this.scrollProgress = (scrollTop / (scrollHeight - clientHeight)) * 100;
   }
 
   myFunction() {
